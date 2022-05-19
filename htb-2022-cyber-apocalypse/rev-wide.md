@@ -3,7 +3,7 @@ layout: default
 title: Wide
 ---
 
-# [Cyber Apocalypse](../index.md) - Reversing - Wide
+# [Cyber Apocalypse](index.md) - Reversing - Wide
 
 This challenge is a small binary that reads a database file of different dimension names and descriptions. 
 A menu appears listing the dimensions, and you are prompted to choose one to examine.

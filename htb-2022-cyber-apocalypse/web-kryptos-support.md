@@ -3,7 +3,7 @@ layout: default
 title: Kryptos Support
 ---
 
-# [Cyber Apocalypse](../index.md) - Web - Kryptos Support
+# [Cyber Apocalypse](index.md) - Web - Kryptos Support
 *I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
 
 This challenge is a support portal for some kind of vault. The landing page allows the user to enter text in a box and submit this as a ticket for an admin to review. There was no authentication on this page. 

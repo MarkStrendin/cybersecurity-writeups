@@ -3,7 +3,7 @@ layout: default
 title: Compressor
 ---
 
-# [Cyber Apocalypse](../index.md) - Misc - Compressor
+# [Cyber Apocalypse](index.md) - Misc - Compressor
 
 This challenge was a remote server that you connect to with a terminal (like telnet).
 

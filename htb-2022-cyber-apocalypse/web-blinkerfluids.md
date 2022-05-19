@@ -3,7 +3,7 @@ layout: default
 title: Blinkerfluids
 ---
 
-# [Cyber Apocalypse](../index.md) - Web - Blinkerfluids
+# [Cyber Apocalypse](index.md) - Web - Blinkerfluids
 
 *I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
 

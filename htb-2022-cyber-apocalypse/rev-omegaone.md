@@ -3,7 +3,7 @@ layout: default
 title: OmegaOne
 ---
 
-# [Cyber Apocalypse](../index.md) - Reversing - OmegaOne
+# [Cyber Apocalypse](index.md) - Reversing - OmegaOne
 
 In this challenge, we are given a binary and a text file (`outut.txt`)containing 32 names.
 

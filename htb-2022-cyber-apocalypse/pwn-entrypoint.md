@@ -3,7 +3,7 @@ layout: default
 title: Space Pirate: Entrypoint
 ---
 
-# [Cyber Apocalypse](../index.md) - Pwn - Space Pirate: Entrypoint
+# [Cyber Apocalypse](index.md) - Pwn - Space Pirate: Entrypoint
 
 This challenge is done via a remote connection to a server over telnet (or Netcat probably would have worked as well).
 We were provided the binary for this challenge, which could be decompiled using a program like Ghidra.
