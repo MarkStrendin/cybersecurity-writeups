@@ -163,7 +163,7 @@ It seems like I should just be able to look up each name in this dictionary and 
 
 I *could* do this manually, but I'm a professional C# programmer, so I write a quick script using [.Net Fiddle](https://dotnetfiddle.net/) to assemble the flag for me. I was able to quickly turn the above C++ code into the correct formatting for a C# dictionary using VSCode and it's multi-cursor capabilities (Sublime Text would also have worked).
 
-```C#
+```cs
 using System;
 using System.Text;
 using System.Collections;
