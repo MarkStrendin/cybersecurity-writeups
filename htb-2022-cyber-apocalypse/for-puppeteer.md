@@ -32,7 +32,9 @@ ScriptBlock ID: 3f384b05-3a00-4a65-bbf7-e31b331ac923
 Path: C:\sysmgr\special_orders.ps1
 ```
 
-Copying and pasting the contents into a text/code editor we can see the full script more easily. I did not include the full text of the script here, because my antivirus really did not like it.
+Copying and pasting the contents into a text/code editor we can see the full script more easily.
+
+![Event Viewer Screenshot](for-puppeteer/screenshot-00.png)
 
 There appear to be two distinct sections of this script - one that unpacks and runs the giant blob of shellcode, and one that unpacks "Special Orders!". 
 
