@@ -4,10 +4,14 @@ title: HackTheBox Cyber Apocalypse CTF 2022
 ---
 
 ![May 14-20th 2022](cyber_apocalypse_2022_ca.jpg)
+# Event
+**Date:** May 14, 2022 - May 20, 2022
+
+**Teams Allowed:** Yes, up to 10 members
 
 # My progress
 I placed **571** out of 7024 teams, with 10/61 solves, and 2725/19725 points.
-This CTF allowed teams, and my team was just me.
+I played this one solo.
 
 # Challenges completed during competition
 ## Warmup
