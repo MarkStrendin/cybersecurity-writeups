@@ -46,3 +46,9 @@ pre, code {
     color: #707070 !important; 
 }
 
+@media screen and (max-width: 1000px) {	
+    .inner {
+        max-width: 100%;
+        width: 100%;
+    }    
+}
