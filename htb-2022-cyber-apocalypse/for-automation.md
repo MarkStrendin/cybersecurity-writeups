@@ -131,7 +131,7 @@ It looks like this script does an initial DNS query for TXT records, decrypts th
 
 First I will try to find what the commands are, then I will explore how the data is transmitted back via DNS.
 
-## Finding the initial commands
+## Commands from the threat actor
 The script makes an initial DNS request to `147.182.172.189`, looking for TXT records, so that should be easy enough to find.
 
 Setting my Wireshark filter to simply `dns.txt` gives me exactly 1 frame:
@@ -250,9 +250,8 @@ The password that the script gave it's user - `JHBhcnQxPSdIVEJ7eTB1X2M0bl8n` loo
 
 `$part1='HTB{y0u_c4n_'`
 
-## Decrypting the responses
+## Responses from our server
 
-## The first part of the flag
 The second half of the key must be encoded in the DNS-based communication, so we'll need to figure out how to decrypt that.
 
 Spending *many hours* examining the script, it appears to work by:
