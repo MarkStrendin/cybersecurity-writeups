@@ -57,7 +57,7 @@ Running the program again, selecting `6`, and giving it the key `sup3rs3cr3tw1d3
 HTB{str1ngs_4r3nt_4lw4ys_4sc11}
 ```
 
-The flag seemed to be a clue on a different way to solve this challenge - if `strings` didn't find it, but I can see it in the source code, it sounds like I could have coaxed `strings` into finding it if I didn't just use the default options.
+The flag seemed to be a clue on a different way to solve this challenge - "strings aren't always ASCII". If `strings` didn't find it, but I can see it in the source code, it sounds like I could have pursuaded `strings` to finding it if I didn't just use the default options.
 
 `strings` supports different string encodings using the `-e` option:
 ```
