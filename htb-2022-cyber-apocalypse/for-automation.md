@@ -51,7 +51,7 @@ ZnVuY3Rpb24gQ3JlYXRlLUFlc01hbmFnZWRPYmplY3QoJGtleSwgJElWKSB7CiAgICAkYWVzTWFuYWdl
 This doesn't look like an image to me - it looks more like something obscured by base64 encoding. Decoding it gives us a powershell script:
 
 
-```
+```powershell
 function Create-AesManagedObject($key, $IV) {
     $aesManaged = New-Object "System.Security.Cryptography.AesManaged"
     $aesManaged.Mode = [System.Security.Cryptography.CipherMode]::CBC
