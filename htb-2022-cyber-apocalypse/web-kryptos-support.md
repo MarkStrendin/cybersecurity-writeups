@@ -5,6 +5,8 @@ title: Kryptos Support
 
 # [Cyber Apocalypse](index.md) - Web - Kryptos Support
 
+> The secret vault used by the Longhir's planet council, Kryptos, contains some very sensitive state secrets that Virgil and Ramona are after to prove the injustice performed by the commission. Ulysses performed an initial recon at their request and found a support portal for the vault. Can you take a look if you can infiltrate this system?
+
 This challenge is a support portal for some kind of vault. The landing page allows the user to enter text in a box and submit this as a ticket for an admin to review. There was no authentication on this page. 
 
 ![Kryptos screenshot](web-kryptossupport/screenshot-00.png)

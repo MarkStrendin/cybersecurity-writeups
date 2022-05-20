@@ -5,6 +5,8 @@ title: OmegaOne
 
 # [Cyber Apocalypse](index.md) - Reversing - OmegaOne
 
+> You've been sent to the library planet Omega-One. Here, records from all over the galaxy are collected, sorted and archived with perfect efficiency. You need to retrieve records about Draeger's childhood, but the interface is impossibly large. Can you unravel the storage system?
+
 In this challenge, we are given a binary and a text file (`outut.txt`)containing 32 names.
 
 Running the binary doesn't appear to do produce any output or syntax help.
