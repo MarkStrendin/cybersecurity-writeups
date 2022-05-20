@@ -70,5 +70,3 @@ And this prints the flag to the screen.
 ```
 HTB{th3_g4t35_4r3_0p3n!}
 ```
-
-I'm guessing that this is meant to either be an example of debug code accidentally left in, or perhaps a challenge meant to make you try the simple things first.
