@@ -3,8 +3,12 @@ layout: default
 title: HackTheBox Cyber Apocalypse CTF 2022 
 ---
 
+# [Home](../index.md) - HackTheBox Cyber Apocalypse CTF 2022
+
 ![May 14-20th 2022](cyber_apocalypse_2022_ca.jpg)
-# Event
+# Event Details
+**Location:** https://ctf.hackthebox.com
+
 **Date:** May 14, 2022 - May 20, 2022
 
 **Teams Allowed:** Yes, up to 10 members
