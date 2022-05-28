@@ -82,7 +82,7 @@ The response I got back was:
 }
 ```
 
-Now all I needed to do was to visit `http://challenge-ip-and-port/static/flag.txt` to view the flag.
+Now all I needed to do was to visit `http://challenge-ip-and-port/static/invoices/flag.txt` to view the flag.
 
 ```
 HTB{bl1nk3r_flu1d_f0r_int3rG4l4c7iC_tr4v3ls}
