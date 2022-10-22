@@ -17,5 +17,16 @@ title: HackTheBox Hack The Boo 2022
 
 # Challenges completed during competition
 
+## Web
+
+## Pwn
+
+## Reversing
+ - 01 - [Cult Meeting](rev-cult-meeting.md)
+
+## Crypto
+
 ## Forensics
  - 01 - [Wrong Spooky Season](for-wrong-spooky-season.md)
+
+

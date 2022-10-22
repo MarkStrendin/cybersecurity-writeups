@@ -5,6 +5,8 @@ title: Wrong Spooky Season
 
 # [Hack The Boo](index.md) - Forensics - Wrong Spooky Season
 
+**Difficulty:** Easy
+
 > "I told them it was too soon and in the wrong season to deploy such a website, but they assured me that theming it properly would be enough to stop the ghosts from haunting us. I was wrong." Now there is an internal breach in the `Spooky Network` and you need to find out what happened. Analyze the the network traffic and find how the scary ghosts got in and what they did.
 
 We are given a zip file with a pcap file inside it.
@@ -49,7 +51,7 @@ Using CyberChef to decode this from hex, we can see that this decodes to:
 id
 ```
 
-The following filter helps us see the entire conversation with the repies:
+The following filter helps us see the entire conversation with the replies:
 ```
 tcp.flags.push == 1 && tcp.port == 1337
 ```
