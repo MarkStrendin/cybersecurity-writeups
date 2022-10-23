@@ -18,8 +18,10 @@ title: HackTheBox Hack The Boo 2022
 # Challenges completed during competition
 
 ## Web
+ - 01 - [Evaluation Deck](web-evaluation-deck.md)
 
 ## Pwn
+ - 01 - [Pumpkin Stand](pwn-pumpkin-stand.md)
 
 ## Reversing
  - 01 - [Cult Meeting](rev-cult-meeting.md)
