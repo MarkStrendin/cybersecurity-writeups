@@ -181,10 +181,10 @@ Wireshark can help us re-assemble the website, and this may help us determine ho
 
 This filter helps us isolate the HTTP traffic: `http && ip.src == 192.168.1.166`. We can then save the packet data out into the website structure - I did this manually one file at a time.
 
-![Blinkerfluids screenshot](for-wrong-spooky-season/for-wrong-spooky-season-01.png)
+![Wrong Spooky Season screenshot](for-wrong-spooky-season/for-wrong-spooky-season-01.png)
 
 It looks like there is a contact form at the bottom of the page, so if it accepts HTTP POST data, this may be an attack vector.
-![Blinkerfluids screenshot](for-wrong-spooky-season/for-wrong-spooky-season-02.png)
+![Wrong Spooky Season screenshot](for-wrong-spooky-season/for-wrong-spooky-season-02.png)
 
 I noticed earlier that there was a `POST` from the attacker to the web server, so lets take a look at that.
 
