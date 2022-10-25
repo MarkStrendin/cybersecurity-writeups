@@ -30,5 +30,15 @@ title: HackTheBox Hack The Boo 2022
 
 ## Forensics
  - 01 - [Wrong Spooky Season](for-wrong-spooky-season.md)
+ - 03 - [Halloween Invitation](for-halloween-invitation.md)
 
 
+# Challenges attempted but not completed
+## Pwn
+ - 02 - [Entity](pwn-entity.md)
+
+## Crypto
+ - 01 - [Gonna-Lift-Em-All](crypto-gonna-lift-em-all.md)
+
+## Forensics
+ - 02 - [Trick or Breach](for-trick-or-breach.md)

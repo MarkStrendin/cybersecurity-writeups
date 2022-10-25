@@ -4,7 +4,6 @@ title: Evaluation Deck
 ---
 
 # [Hack The Boo](index.md) - Web - Evaluation Deck
-
 **Difficulty:** Easy
 
 > A powerful demon has sent one of his ghost generals into our world to ruin the fun of Halloween. The ghost can only be defeated by luck. Are you lucky enough to draw the right cards to defeat him and save this Halloween?

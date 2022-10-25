@@ -4,8 +4,8 @@ title: Cult Meeting
 ---
 
 # [Hack The Boo](index.md) - Reversing - Cult Meeting
-
 **Difficulty:** Easy
+
 > After months of research, you're ready to attempt to infiltrate the meeting of a shadowy cult. Unfortunately, it looks like they've changed their password!
 
 We are provided a binary, and can launch a Docker container that is running this binary.
