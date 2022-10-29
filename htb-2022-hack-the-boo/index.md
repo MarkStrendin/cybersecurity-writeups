@@ -17,7 +17,7 @@ title: HackTheBox Hack The Boo 2022
 I finished 1251 out of 6367 players, finishing 5/25 challenges.
 I was ill for 3 of the 5 days of the CTF, so I was not able to attempt the last few days of challenges.
 
-# Challenges completed during competition
+# Challenges
 
 ## Web
  - 01 - [Evaluation Deck](web-evaluation-deck.md)
