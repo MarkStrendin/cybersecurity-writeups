@@ -14,6 +14,8 @@ title: HackTheBox Hack The Boo 2022
 **Teams Allowed:** No, solo only
 
 # My progress
+I finished 1251 out of 6367 players, finishing 5/25 challenges.
+I was ill for 3 of the 5 days of the CTF, so I was not able to attempt the last few days of challenges.
 
 # Challenges completed during competition
 
@@ -26,8 +28,6 @@ title: HackTheBox Hack The Boo 2022
 ## Reversing
  - 01 - [Cult Meeting](rev-cult-meeting.md)
 
-## Crypto
-
 ## Forensics
  - 01 - [Wrong Spooky Season](for-wrong-spooky-season.md)
  - 03 - [Halloween Invitation](for-halloween-invitation.md)
@@ -36,9 +36,3 @@ title: HackTheBox Hack The Boo 2022
 # Challenges attempted but not completed
 ## Pwn
  - 02 - [Entity](pwn-entity.md)
-
-## Crypto
- - 01 - [Gonna-Lift-Em-All](crypto-gonna-lift-em-all.md)
-
-## Forensics
- - 02 - [Trick or Breach](for-trick-or-breach.md)

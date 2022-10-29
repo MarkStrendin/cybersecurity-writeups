@@ -195,4 +195,4 @@ int main()
 ```
 When I wrote code to simply convert `13371337` into characters, I got unprintable characters, which I could not easily copy and paste back into the terminal.
 
-I stopped working on this challenge at this point, so that I could attempt other challenges.
+I stopped working on this challenge at this point, and didn't get back to it before the CTF event ended.
