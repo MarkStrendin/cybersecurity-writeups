@@ -18,19 +18,27 @@ Not finished yet.
 
 # Challenges completed during competition
 ## Pwn
+ - [Questionnaire](pwn-questionnaire.md) (Very Easy)
 ## Web
+ - [Drobots](web-drobots.md) (Very Easy)
  - [Passman](web-passman.md) (Easy)
+ - [Orbital](web-orbital.md) (Easy)
 ## Blockchain
 ## Hardware
  - [Critical Flight](hw-critical-flight.md) (Very Easy)
 ## Reversing
  - [Shattered Tablet](rev-shattered-tablet.md) (Very Easy)
+ - [Needle in a Haystack](rev-needle-in-a-haystack.md) (Very Easy)
+ - [She Shells C Shells ](rev-cshells.md) (Very Easy)
 ## ML (Machine Learning)
  - [Reconfiguration](ml-reconfiguration.md) (Very Easy)
 ## Misc
  - [Persistence](misc-persistence.md) (Very Easy)
  - [Restricted](misc-restricted.md) (Easy)
+ - [Remote Computation](misc-remote-computation.md) (Easy)
 ## Forensics
+ - [Extraterrestrial Persistence](for-extra-persistence.md) (Very Easy)
+ - [Roten](for-roten.md) (Easy)
 ## Crypto
  - [Ancient Encodings](crypto-ancient-encodings.md) (Very Easy)
  - [Small StEps](crypto-small-steps.md) (Very Easy)

@@ -9,6 +9,26 @@ title: Shattered Tablet
 
 We're just given a zip file with a binary. Running the binary prompts us for a string, but doesn't give us much to go on.
 
+When doing reversing challenges, I like to run `strings` against the binary to see if the flag happens to be visible there. If it is, it can save me a ton of time trying to reverse engineer code.
+
+```sh
+$ strings tablet
+/lib64/ld-linux-x86-64.so.2
+mgUa
+puts
+stdin
+printf
+fgets
+__cxa_finalize
+__libc_start_main
+libc.so.6
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+... lots more things that aren't the flag, removed for brevity...
+```
+So, since that didn't work, we'll need to look at the source code for this.
+
 Analyzing the binary in Ghidra, we find a small program with an extremely complicated `if` statement.
 
 ```c
