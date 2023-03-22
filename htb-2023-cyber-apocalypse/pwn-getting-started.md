@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Questionnaire
+title: Getting Started
 ---
 
-# [Cyber Apocalypse 2023](index.md) - Pwn - Questionnaire
+# [Cyber Apocalypse 2023](index.md) - Pwn - Getting Started
 
 > Get ready for the last guided challenge and your first real exploit. It's time to show your hacking skills.
 
