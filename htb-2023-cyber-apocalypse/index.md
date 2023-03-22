@@ -17,28 +17,44 @@ title: HackTheBox Cyber Apocalypse CTF 2023
 Not finished yet.
 
 # Challenges completed during competition
+## Warmup
+ - Welcome! (Sanity check)
+   - This was a freebie given out on the Discord channel
 ## Pwn
+ - Initialise Connection (Very Easy)
+   - this one is literally connect to a server with netcat and push `1`, so I'm not wasting a page writing it up.
  - [Questionnaire](pwn-questionnaire.md) (Very Easy)
+ - [Getting Started](pwn-getting-started.md) (Very Easy)
 ## Web
+ - Trapped Source (Very Easy) - Completed by a teammate
+ - [Gunhead](web-gunhead.md) (Very Easy)
  - [Drobots](web-drobots.md) (Very Easy)
  - [Passman](web-passman.md) (Easy)
  - [Orbital](web-orbital.md) (Easy)
 ## Blockchain
 ## Hardware
+ - Timed Transmission (Very Easy) - Completed by a teammate
  - [Critical Flight](hw-critical-flight.md) (Very Easy)
+ - [Debug](hw-debug.md) (Easy)
 ## Reversing
  - [Shattered Tablet](rev-shattered-tablet.md) (Very Easy)
  - [Needle in a Haystack](rev-needle-in-a-haystack.md) (Very Easy)
- - [She Shells C Shells ](rev-cshells.md) (Very Easy)
+ - [She Shells C Shells](rev-cshells.md) (Very Easy)
+ - [Hunting License](rev-hunting-license.md) (Easy)
 ## ML (Machine Learning)
  - [Reconfiguration](ml-reconfiguration.md) (Very Easy)
+ - Mysterious Learnings (Very Easy) - Completed by a teammate
 ## Misc
  - [Persistence](misc-persistence.md) (Very Easy)
  - [Restricted](misc-restricted.md) (Easy)
  - [Remote Computation](misc-remote-computation.md) (Easy)
 ## Forensics
+ - Plaintext Treasure (Very Easy) - Completed by a teammate
+ - Alien Cradle (Very Easy) - Completed by a teammate
  - [Extraterrestrial Persistence](for-extra-persistence.md) (Very Easy)
  - [Roten](for-roten.md) (Easy)
+ - [Packet Cyclone](for-packet-cyclone) (Easy)
 ## Crypto
  - [Ancient Encodings](crypto-ancient-encodings.md) (Very Easy)
  - [Small StEps](crypto-small-steps.md) (Very Easy)
+ - [Perfect Synchronization](crypto-perfect-synchronization.md) (Very Easy)
