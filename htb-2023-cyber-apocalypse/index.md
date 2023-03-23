@@ -54,6 +54,7 @@ Not finished yet.
  - [Extraterrestrial Persistence](for-extra-persistence.md) (Very Easy)
  - [Roten](for-roten.md) (Easy)
  - [Packet Cyclone](for-packet-cyclone) (Easy)
+ - [Relic Maps](for-relicmaps) (Medium)
 ## Crypto
  - [Ancient Encodings](crypto-ancient-encodings.md) (Very Easy)
  - [Small StEps](crypto-small-steps.md) (Very Easy)
