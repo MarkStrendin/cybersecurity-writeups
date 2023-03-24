@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Space Pirate: Entrypoint
+title: Space Pirate - Entrypoint
 ---
 
 # [Cyber Apocalypse](index.md) - Pwn - Space Pirate: Entrypoint
