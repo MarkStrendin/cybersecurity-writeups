@@ -11,10 +11,10 @@ title: HackTheBox Cyber Apocalypse CTF 2023
 
 **Date:** March 18th to March 23rd 2023
 
-**Teams Allowed:** Yes, up to 20 members. I participated on a team of 5 people from my workplace. Below are _my_ writeups, not the team's  - I may add those later based on their notes.
+**Teams Allowed:** Yes, up to 20 members. I participated on a team of 5 people from my workplace. Below are _my_ writeups for challenges that I either solved or was directly involved in solving.
 
 # My progress
-Not finished yet.
+Our team finished in __408th place__ out of 6483 total teams worldwide, and 12552 total players.
 
 # Challenges completed during competition
 ## Warmup
