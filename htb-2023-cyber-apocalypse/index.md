@@ -36,6 +36,7 @@ Not finished yet.
  - Timed Transmission (Very Easy) - Completed by a teammate
  - [Critical Flight](hw-critical-flight.md) (Very Easy)
  - [Debug](hw-debug.md) (Easy)
+ - Secret Code (Easy) - Writeup work in progress
 ## Reversing
  - [Shattered Tablet](rev-shattered-tablet.md) (Very Easy)
  - [Needle in a Haystack](rev-needle-in-a-haystack.md) (Very Easy)
