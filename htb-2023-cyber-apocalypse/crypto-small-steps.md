@@ -143,7 +143,7 @@ At this point I noticed that in the `server.py` script, we know that the flag is
 
 I spent more time than I'd care to admit trying to get the cube-root of the given number and convert it into text, but kept running into encoding/decoding problems where Python would round the number when I didn't want it to, and it couldn't be decoded into a string. I got as far as decoding `HTB{`, so I knew I was on the right track, and just needed to understand Python better.
 
-When I had enough of that, I went to Wolfram Alpha () and just asked it to do the math for me, correctly assuming that it would give me the full value. The prompt I used was:
+When I had enough of that, I went to [Wolfram Alpha](https://www.wolframalpha.com/) and just asked it to do the math for me, correctly assuming that it would give me the full value. The prompt I used was:
 
 ```
 What is 70407336670535933819674104208890254240063781538460394662998902860952366439176467447947737680952277637330523818962104685553250402512989897886053 to the power of 1/3
