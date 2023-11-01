@@ -29,20 +29,7 @@ I used [GitHub Gists](https://gist.github.com) to create a file for testing, so 
 
 The first one I made was this - a simple page that utilized all the variables that the challenge told us we could use:
 
-```html
-<html>
-<H1>Variables that they list that are usable</H1>
-<ul>
- <li><b>ClientIP:</b> {{ "{{ .ClientIP }}" }}</li>
- <li><b>Client UA:</b> {{ .ClientUA }}</li>
- <li><b>Server Hostname:</b> {{ .ServerInfo.Hostname }}</li>
- <li><b>Server OS:</b> {{ .ServerInfo.OS }}</li>
- <li><b>Server Kernel:</b> {{ .ServerInfo.KernelVersion }}</li>
- <li><b>Server Memory:</b> {{ .ServerInfo.Memory }}</li>
- <li><b>ClientIpInfo:</b> {{ .ClientIpInfo }}</li>
-</ul>
-</html>
-```
+![HTML template code](web-ghostlytemplates/code-01.png)
 
 Now that I had that working, I went looking for some ways to abuse this.
 
@@ -52,9 +39,6 @@ I went looking through the code to find where we actually see the flag, and I di
 
 I eventually found this website, which discusses Server-Site Template Injection techniques:
 https://github.com/carlospolop/hacktricks/blob/master/pentesting-web/ssti-server-side-template-injection/README.md. This page has a section specifically about SSTI in Go: https://github.com/carlospolop/hacktricks/blob/master/pentesting-web/ssti-server-side-template-injection/README.md#ssti-in-go
-
-To quote this article:
-> If you want to find a RCE in go via SSTI, you should know that as you can access the given object to the template with {{ . }}, you can also call the objects methods. So, imagine that the passed object has a method called System that executes the given command, you could abuse it with: {{ .System "ls" }}
 
 It seems we should be able to reference any local or public object from the underlying code in our template, not just the ones they intended. We don't have a method called `System` like in the example, but lets see what we _do_ have...
 
@@ -166,9 +150,7 @@ func (p RequestData) OutFileContents(filePath string) string {
 
 With what we learned from the SSTI document, we should be able to do something like the code below to get it to read the contents of `flag.txt`. We know that `flag.txt` is located at `/flag.txt`, because we can see where the Dockerfile put it in the source code.
 
-```
-{{ .OutFileContents "/flag.txt" }}
-```
+![HTML Template code](web-ghostlytemplates/code-02.png)
 
 And sure enough, this gets us the flag.
 
