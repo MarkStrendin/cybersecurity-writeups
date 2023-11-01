@@ -3,7 +3,7 @@ layout: default
 title: Wide
 ---
 
-# [Hack The Boo 2023](index.md) - Forensics - Vulnerable Season
+# [Hack The Boo 2023 - Practice](index.md) - Forensics - Vulnerable Season
 
 > Halloween season is a very busy season for all of us. Especially for web page administrators. Too many Halloween-themed parties to attend, too many plugins to manage. Unfortunately, our admin didn't update the plugins used by our WordPress site and as a result, we got pwned. Can you help us investigate the incident by analyzing the web server logs?
 

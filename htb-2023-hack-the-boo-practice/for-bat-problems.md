@@ -3,7 +3,7 @@ layout: default
 title: Wide
 ---
 
-# [Hack The Boo 2023](index.md) - Forensics - Bat Problems
+# [Hack The Boo 2023 - Practice](index.md) - Forensics - Bat Problems
 
 > On a chilly Halloween night, the town of Hollowville was shrouded in a veil of mystery. The infamous "Haunted Hollow House", known for its supernatural tales, concealed a cryptic document. Whispers in the town suggested that the one who could solve its riddle would reveal a beacon of hope. As an investigator, your mission is to decipher the script's enigmatic sorcery, break the curse, and unveil the flag to become Hollowville's savior.
 
@@ -45,7 +45,7 @@ SQBmACgAJABQAFMAVgBlAHIAcwBpAG8AbgBUAGEAYgBsAGUALgBQAFMAVgBlAHIAcwBpAG8AbgAuAE0A
 ```
 
 Which translates to:
-![Bat Problems](for-batproblems/01.png)
+![Bat Problems - Practice](for-batproblems/01.png)
 
 Which in addition to being malware(Trojan:Script/Wacatac.H!ml, according to Windows Defender), also happens to contain our flag:
 ```powershell

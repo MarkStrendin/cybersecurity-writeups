@@ -3,7 +3,7 @@ layout: default
 title: Wide
 ---
 
-# [Hack The Boo 2023](index.md) - Crypto - Hexoding
+# [Hack The Boo 2023 - Practice](index.md) - Crypto - Hexoding
 
 > In order to be a successful ghost in the modern society, a ghost must fear nothing. Caspersky always loved scaring people, but he could not reach his maximum potential because he was fearful of cryptography. This is why he wants to join the Applied Cryptography Academy of Ghosts. To gain admission, the professors give you a challenge that you need to solve. They try to spook you with weird functions, but don't be scared; the challenge can be solved even without the source code. Can you help Caspersky pass the entrance exams?
 Submit flag & press enter

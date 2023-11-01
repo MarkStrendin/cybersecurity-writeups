@@ -3,7 +3,7 @@ layout: default
 title: Wide
 ---
 
-# [Hack The Boo 2023](index.md) - Reversing - Candy Bowl
+# [Hack The Boo 2023 - Practice](index.md) - Reversing - Candy Bowl
 
 > Dip your hand in my candy bowl and see if you can pull out a flag!
 
