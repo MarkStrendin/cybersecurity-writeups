@@ -16,7 +16,7 @@ What are the IP address and port of the server from which the malicious actors d
 > 
 ```
 
-I remembered that in the [HackTheBox Cyber Apocalypse 2023 - The Cursed Mission](../htb-2023-cyber-apocalypse/) CTF, there was a challenge that walked the user through using a utility called [Chainsaw](https://github.com/WithSecureLabs/chainsaw). I've wanted to sit down and get more familliar with Chainsaw since then, so it looks like here is a good opportunity to put it to use. This article will _not_ be an especially good example of how to use Chainsaw - I went for speed here, not accuracy, and I spent a lot of time looking over the results. 
+I remembered that in the [HackTheBox Cyber Apocalypse 2023 - The Cursed Mission](../htb-2023-cyber-apocalypse/) CTF, there was a challenge ([Packet Cyclone](../htb-2023-cyber-apocalypse/for-packet-cyclone))that walked the user through using a utility called [Chainsaw](https://github.com/WithSecureLabs/chainsaw). I've wanted to sit down and get more familliar with Chainsaw since then, so it looks like here is a good opportunity to put it to use. This article will _not_ be an especially good example of how to use Chainsaw - I went for speed here, not accuracy, and I spent a lot of time looking over the results. 
 
 ```
 What are the IP address and port of the server from which the malicious actors downloaded the ransomware? (for example: 98.76.54.32:443)
