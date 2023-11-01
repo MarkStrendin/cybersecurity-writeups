@@ -154,7 +154,7 @@ With what we learned from the SSTI document, we should be able to do something l
 
 ![HTML Template code](web-ghostlytemplates/code-02.png)
 
-[GitHub Gist Version](https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/cc64431ffd5786614350298ac5dfdb12e9376ad9/experiments)
+[GitHub Gist Version](https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/20ed8716d27c1e5504955aff9b9751b53d88966c/flag-getter)
 
 And sure enough, this gets us the flag.
 
