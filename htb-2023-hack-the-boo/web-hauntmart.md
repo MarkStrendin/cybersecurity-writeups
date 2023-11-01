@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: HauntMart
 ---
 
 # [Hack The Boo 2023](index.md) - Web - HauntMart

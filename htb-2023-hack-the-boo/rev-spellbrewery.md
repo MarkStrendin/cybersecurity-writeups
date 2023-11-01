@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: SpellBrewery
 ---
 
 # [Hack The Boo 2023](index.md) - Reversing - SpellBrewery

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Hexoding
 ---
 
 # [Hack The Boo 2023 - Practice](index.md) - Crypto - Hexoding

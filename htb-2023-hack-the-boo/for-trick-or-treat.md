@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Trick or Treat
 ---
 
 # [Hack The Boo 2023](index.md) - Forensics - Trick or Treat

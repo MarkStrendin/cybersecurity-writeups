@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Ghostly Templates
 ---
 
 # [Hack The Boo 2023](index.md) - Web - Ghostly Templates

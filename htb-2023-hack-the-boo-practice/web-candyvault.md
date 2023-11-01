@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: CandyVault
 ---
 
 # [Hack The Boo 2023 - Practice](index.md) - Web - CandyVault

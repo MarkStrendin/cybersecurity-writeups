@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Vulnerable Season
 ---
 
 # [Hack The Boo 2023 - Practice](index.md) - Forensics - Vulnerable Season

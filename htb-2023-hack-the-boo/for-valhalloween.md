@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: ValHalloween
 ---
 
 # [Hack The Boo 2023](index.md) - Forensics - ValHalloween

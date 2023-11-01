@@ -25,7 +25,7 @@ I placed 119th out of 2266 players, and I was able to complete 5 out of the 10 c
 
 # Forensics
 - [Trick or Treat](for-trick-or-treat.md)
-- [Vahalloween](for-valhalloween.md)
+- [Valhalloween](for-valhalloween.md)
 
 # Crypto
 - Symbols

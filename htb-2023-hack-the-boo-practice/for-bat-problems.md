@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Bat Problems
 ---
 
 # [Hack The Boo 2023 - Practice](index.md) - Forensics - Bat Problems

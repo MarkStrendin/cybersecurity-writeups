@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wide
+title: Candy Bowl
 ---
 
 # [Hack The Boo 2023 - Practice](index.md) - Reversing - Candy Bowl
