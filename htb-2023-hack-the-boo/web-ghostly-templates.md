@@ -13,8 +13,6 @@ The website seems fairly simple at first - no login or anything.
 
 ![Ghostly Templates](web-ghostlytemplates/01.png)
 
-[GitHub Gist Version](https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/e146300d6d1280844dfe19711d0b7576552b67ca/working-given-vars)
-
 I'm not familliar with whatever templating technology they're using, but I can tell that the name of the game here is some kind of template "injection" - making a template with something in it that the developers did not intend or defend against.
 
 As an aside, as a developer, I can tell that this is _definitely not a good idea_ for a publicly accessible website... I don't need to know anything about how the templating works to know that this is dangerous and will almost certainly be abused.
@@ -32,6 +30,8 @@ I used [GitHub Gists](https://gist.github.com) to create a file for testing, so 
 The first one I made was this - a simple page that utilized all the variables that the challenge told us we could use:
 
 ![HTML template code](web-ghostlytemplates/code-01.png)
+
+[GitHub Gist Version](https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/e146300d6d1280844dfe19711d0b7576552b67ca/working-given-vars)
 
 Now that I had that working, I went looking for some ways to abuse this.
 
