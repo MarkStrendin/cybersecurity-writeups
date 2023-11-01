@@ -33,7 +33,7 @@ The first one I made was this - a simple page that utilized all the variables th
 <html>
 <H1>Variables that they list that are usable</H1>
 <ul>
- <li><b>ClientIP:</b> {{ .ClientIP }}</li>
+ <li><b>ClientIP:</b> {{ "{{ .ClientIP }}" }}</li>
  <li><b>Client UA:</b> {{ .ClientUA }}</li>
  <li><b>Server Hostname:</b> {{ .ServerInfo.Hostname }}</li>
  <li><b>Server OS:</b> {{ .ServerInfo.OS }}</li>
