@@ -12,6 +12,7 @@ Like most web challenges, we are provided with a zip file containing source code
 The website seems fairly simple at first - no login or anything.
 
 ![Ghostly Templates](web-ghostlytemplates/01.png)
+GitHub Gist URL: https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/e146300d6d1280844dfe19711d0b7576552b67ca/working-given-vars
 
 I'm not familliar with whatever templating technology they're using, but I can tell that the name of the game here is some kind of template "injection" - making a template with something in it that the developers did not intend or defend against.
 
@@ -151,6 +152,7 @@ func (p RequestData) OutFileContents(filePath string) string {
 With what we learned from the SSTI document, we should be able to do something like the code below to get it to read the contents of `flag.txt`. We know that `flag.txt` is located at `/flag.txt`, because we can see where the Dockerfile put it in the source code.
 
 ![HTML Template code](web-ghostlytemplates/code-02.png)
+GitHub Gist URL: https://gist.githubusercontent.com/MarkStrendin/cd547d1bb1d20d54d8c07645864cc2b4/raw/cc64431ffd5786614350298ac5dfdb12e9376ad9/experiments
 
 And sure enough, this gets us the flag.
 
